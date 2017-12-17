@@ -4,7 +4,7 @@ from sqlalchemy.ext.declarative import declarative_base
 import configparser
 
 config = configparser.ConfigParser()
-config.read("product.ini")
+config.read("../product.ini")
 engine = config['DATABASE']['engine']
 
 Base = declarative_base()
